@@ -19,7 +19,7 @@
     <!-- Google Fonts extensions-->
     <title>To Do App</title>
 </head>
-<body id="body" onload="retrieveHTMLPage()">
+<body>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-auto min-vh-100 text-center">
@@ -38,16 +38,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-      var body = document.getElementById("body").innerHTML;
-  
-      localStorage.setItem("body", body);
-
-      function retrieveHTMLPage(){
-      document.getElementById("body").innerHTML = localStorage.getItem("body");
-        }
-    </script>
 
     <script src="js-files/AppListController.js"></script>
     <script src="js-files/IoHandler.js"></script>
