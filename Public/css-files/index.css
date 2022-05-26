@@ -1,4 +1,6 @@
 body{
     background-image: url(../images/bg-todo.jpg);
     font-family: 'Lobster', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
