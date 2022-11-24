@@ -1,8 +1,10 @@
 var toDoCounter= 1;
 
+//To do list element creater
 function addToDoElementToList(){
     toDoCounter++;
     let toDoItemString = "todo"+toDoCounter;
+
     //Li tag creation
     let liTag= document.createElement("li");
     liTag.setAttribute("class","list-group-item");
@@ -25,6 +27,7 @@ function addToDoElementToList(){
     button.onclick = deleteFromToDoList;
     button.setAttribute("style","margin-left: 1rem")
 
+    //Elements of Li is added
     liTag.appendChild(input);
     liTag.appendChild(button);
 
@@ -32,6 +35,7 @@ function addToDoElementToList(){
     
 }
 
+//Element delete button onclick function
 var deleteFromToDoList = function(){
 
     let deleteLiTag = document.getElementById(this.id+"li");
